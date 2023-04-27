@@ -1,5 +1,5 @@
-import 'package:alura_flutter_client_control/models/client.dart';
-import 'package:alura_flutter_client_control/models/client_type.dart';
+// import 'package:alura_flutter_client_control/models/client.dart';
+// import 'package:alura_flutter_client_control/models/client_type.dart';
 import 'package:alura_flutter_client_control/models/clients.dart';
 import 'package:flutter/material.dart';
 import 'package:alura_flutter_client_control/pages/client_types_page.dart';
@@ -10,22 +10,22 @@ void main() {
   runApp(
     ChangeNotifierProvider(
       create: (context) => Clients(clients: [
-        Client(
-          name: 'Geraldo',
-          email: 'leo@email.com',
-          type: ClientType(
-            name: 'Platinum',
-            icon: Icons.credit_card,
-          ),
-        ),
+        // Client(
+        //   name: 'Geraldo',
+        //   email: 'leo@email.com',
+        //   type: ClientType(
+        //     name: 'Platinum',
+        //     icon: Icons.credit_card,
+        //   ),
+        // ),
       ]),
-      child: const MyApp(),
+      child: const App(),
     ),
   );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
