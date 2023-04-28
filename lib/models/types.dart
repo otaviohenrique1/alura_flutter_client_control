@@ -10,4 +10,9 @@ class Types extends ChangeNotifier {
     types.add(type);
     notifyListeners(); /* Notifica o privider quando acontecer alguma mudança no estado */
   }
+
+  void remove(int index) {
+    types.removeAt(index);
+    notifyListeners(); /* Notifica o privider quando acontecer alguma mudança no estado */
+  }
 }
