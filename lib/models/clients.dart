@@ -10,4 +10,9 @@ class Clients extends ChangeNotifier {
     clients.add(client);
     notifyListeners(); /* Notifica o privider quando acontecer alguma mudança no estado */
   }
+
+  void remove(int index) {
+    clients.removeAt(index);
+    notifyListeners(); /* Notifica o privider quando acontecer alguma mudança no estado */
+  }
 }
